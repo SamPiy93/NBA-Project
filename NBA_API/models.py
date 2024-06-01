@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+
 class Team(models.Model):
     name = models.CharField(max_length=100)
     coach = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -22,8 +23,9 @@ class Team(models.Model):
 
         return 0
 
+
 class Player(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True) #should check this
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)  # should check this
     name = models.CharField(max_length=100)
     height = models.PositiveIntegerField()
     team = models.ForeignKey(Team, related_name='players', on_delete=models.CASCADE, null=True)
@@ -38,12 +40,21 @@ class Player(models.Model):
 
         return sum(player_scores) / len(player_scores)
 
+
 class Game(models.Model):
     team1 = models.ForeignKey(Team, related_name='team1_games', on_delete=models.CASCADE, null=True)
     team2 = models.ForeignKey(Team, related_name='team2_games', on_delete=models.CASCADE, null=True)
     team1_score = models.PositiveIntegerField(null=True)
     team2_score = models.PositiveIntegerField(null=True)
-    winner = models.ForeignKey(Team, related_name='winning_games', on_delete=models.CASCADE, blank=True, null=True)
+
+    @property
+    def team_won(self):
+        if self.team1_score > self.team2_score:
+            return self.team1.name
+        elif self.team1_score < self.team2_score:
+            return self.team2.name
+        else:
+            return None
 
 
 class GamePlayer(models.Model):
