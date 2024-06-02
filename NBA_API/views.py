@@ -1,5 +1,5 @@
+import numpy as np
 from django.contrib.auth.models import Group, User
-from django.http import JsonResponse
 from rest_framework import generics, viewsets
 from rest_framework.authentication import BasicAuthentication
 
@@ -29,7 +29,7 @@ class UserGroupListView(viewsets.ModelViewSet):
         retrieval endpoint for Groups
     """
     authentication_classes = [BasicAuthentication]
-    permission_classes = [AdminPermission]
+    permission_classes = [AdminPermission | CoachPermission]
 
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
@@ -62,7 +62,7 @@ class TeamListCreateView(generics.ListCreateAPIView):
         retrieval & create endpoint for Teams
     """
     authentication_classes = [BasicAuthentication]
-    permission_classes = [AdminPermission]
+    permission_classes = [AdminPermission | CoachPermission]
 
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
@@ -73,7 +73,7 @@ class TeamListUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
         retrieval, update & delete endpoint for Teams
     """
     authentication_classes = [BasicAuthentication]
-    permission_classes = [AdminPermission]
+    permission_classes = [AdminPermission | CoachPermission]
 
     queryset = Team.objects.all()
     serializer_class = TeamSerializer
@@ -126,15 +126,23 @@ class GamePlayerListUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = GamePlayerSerializer
 
 
-def TopPlayersView(_request, id):
+class TopPlayersView(generics.ListAPIView):
     """
         endpoint to find the Top Players of a particular team when team id provided
     """
-    team = Team.objects.get(id=id)
-    team_players = Player.objects.filter(team=team).exclude(user=team.coach)
-    serializer = PlayerSerializer(team_players, many=True)
 
-    """
-        Todo: add percentile logic
-    """
-    return JsonResponse(serializer.data, safe=False)
+    authentication_classes = [BasicAuthentication]
+    permission_classes = [AdminPermission | CoachPermission]
+    serializer_class = PlayerSerializer
+
+    def get_queryset(self):
+        # fetch team by id
+        id = self.kwargs.get('id')
+        team = Team.objects.get(id=id)
+        team_players = Player.objects.filter(team=team)
+        sorted_team_players_by_average_score = sorted(team_players, key=lambda player: player.average_score)
+        sorted_average_scores = list(map(lambda player: player.average_score, sorted_team_players_by_average_score))
+        # fetch ninetieth percentile score from numpy
+        ninetieth_percentile_score = np.percentile(sorted_average_scores, 90)
+        # filter and list players who's average score is over ninetieth percentile score of the team
+        return list(filter(lambda player: player.average_score >= ninetieth_percentile_score, team_players))

@@ -8,24 +8,15 @@ class Team(models.Model):
 
     @property
     def average_score(self):
-        total_score = 0
-        total_games = 0
+        total_score = sum(game.team1_score for game in self.team1_games.all()) + \
+                      sum(game.team2_score for game in self.team2_games.all())
+        total_games = self.team1_games.count() + self.team2_games.count()
 
-        for game in self.team1_games.all():
-            total_score += game.team1_score
-            total_games += 1
-        for game in self.team2_games.all():
-            total_score += game.team2_score
-            total_games += 1
-
-        if total_games > 0:
-            return total_score / total_games
-
-        return 0
+        return (total_score / total_games) if total_games > 0 else 0
 
 
 class Player(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)  # should check this
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)  #TODO: verify this
     name = models.CharField(max_length=100)
     height = models.PositiveIntegerField()
     team = models.ForeignKey(Team, related_name='players', on_delete=models.CASCADE, null=True)
