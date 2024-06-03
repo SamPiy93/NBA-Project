@@ -1,0 +1,34 @@
+[
+  {
+    "model": "NBA_API.team",
+    "pk": 1,
+    "fields": {
+      "name": "Boston Celtics",
+      "coach": 11
+    }
+  },
+  {
+    "model": "NBA_API.team",
+    "pk": 2,
+    "fields": {
+      "name": "Brooklyn Nets",
+      "coach": 12
+    }
+  },
+  {
+    "model": "NBA_API.team",
+    "pk": 3,
+    "fields": {
+      "name": "New York Knicks",
+      "coach": 13
+    }
+  },
+  {
+    "model": "NBA_API.team",
+    "pk": 4,
+    "fields": {
+      "name": "Chicago Bulls",
+      "coach": 14
+    }
+  }
+]

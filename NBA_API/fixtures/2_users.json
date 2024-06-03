@@ -1,0 +1,498 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin1",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 11,
+    "fields": {
+      "username": "coach1",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 12,
+    "fields": {
+      "username": "coach2",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 13,
+    "fields": {
+      "username": "coach3",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 14,
+    "fields": {
+      "username": "coach4",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 101,
+    "fields": {
+      "username": "player1",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 102,
+    "fields": {
+      "username": "player2",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 103,
+    "fields": {
+      "username": "player3",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 104,
+    "fields": {
+      "username": "player4",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 105,
+    "fields": {
+      "username": "player5",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 106,
+    "fields": {
+      "username": "player6",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 107,
+    "fields": {
+      "username": "player7",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 108,
+    "fields": {
+      "username": "player8",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 109,
+    "fields": {
+      "username": "player9",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 110,
+    "fields": {
+      "username": "player10",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 111,
+    "fields": {
+      "username": "player11",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 112,
+    "fields": {
+      "username": "player12",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 113,
+    "fields": {
+      "username": "player13",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 114,
+    "fields": {
+      "username": "player14",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 115,
+    "fields": {
+      "username": "player15",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 116,
+    "fields": {
+      "username": "player16",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 117,
+    "fields": {
+      "username": "player17",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 118,
+    "fields": {
+      "username": "player18",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 119,
+    "fields": {
+      "username": "player19",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 120,
+    "fields": {
+      "username": "player20",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 121,
+    "fields": {
+      "username": "player21",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 122,
+    "fields": {
+      "username": "player22",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 123,
+    "fields": {
+      "username": "player23",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 124,
+    "fields": {
+      "username": "player24",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 125,
+    "fields": {
+      "username": "player25",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 126,
+    "fields": {
+      "username": "player26",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 127,
+    "fields": {
+      "username": "player27",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 128,
+    "fields": {
+      "username": "player28",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 129,
+    "fields": {
+      "username": "player29",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 130,
+    "fields": {
+      "username": "player30",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 131,
+    "fields": {
+      "username": "player31",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 132,
+    "fields": {
+      "username": "player32",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 133,
+    "fields": {
+      "username": "player33",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 134,
+    "fields": {
+      "username": "player34",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 135,
+    "fields": {
+      "username": "player35",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 136,
+    "fields": {
+      "username": "player36",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 137,
+    "fields": {
+      "username": "player37",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 138,
+    "fields": {
+      "username": "player38",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 139,
+    "fields": {
+      "username": "player39",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 140,
+    "fields": {
+      "username": "player40",
+      "password": "pbkdf2_sha256$720000$1B6wM8W9xnF7naQj2jo656$nTlbxk8EOI0y7qJUtjFs6My6aOLxrS+S5V6VLs6lW5Q=",
+      "groups": [
+        3
+      ]
+    }
+  }
+]
+  

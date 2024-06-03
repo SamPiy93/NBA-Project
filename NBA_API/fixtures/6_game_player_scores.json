@@ -1,0 +1,128 @@
+[
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 1,
+    "fields": {
+      "game": 1,
+      "player": 1,
+      "score": 13
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 2,
+    "fields": {
+      "game": 1,
+      "player": 2,
+      "score": 7
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 3,
+    "fields": {
+      "game": 1,
+      "player": 11,
+      "score": 4
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 4,
+    "fields": {
+      "game": 1,
+      "player": 14,
+      "score": 10
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 5,
+    "fields": {
+      "game": 1,
+      "player": 15,
+      "score": 5
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 6,
+    "fields": {
+      "game": 1,
+      "player": 19,
+      "score": 6
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 7,
+    "fields": {
+      "game": 2,
+      "player": 22,
+      "score": 6
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 8,
+    "fields": {
+      "game": 2,
+      "player": 24,
+      "score": 10
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 9,
+    "fields": {
+      "game": 2,
+      "player": 25,
+      "score": 12
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 10,
+    "fields": {
+      "game": 2,
+      "player": 21,
+      "score": 15
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 11,
+    "fields": {
+      "game": 2,
+      "player": 31,
+      "score": 8
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 12,
+    "fields": {
+      "game": 2,
+      "player": 37,
+      "score": 14
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 13,
+    "fields": {
+      "game": 2,
+      "player": 39,
+      "score": 7
+    }
+  },
+  {
+    "model": "NBA_API.GamePlayer",
+    "pk": 14,
+    "fields": {
+      "game": 2,
+      "player": 33,
+      "score": 10
+    }
+  }
+]
